@@ -6,6 +6,7 @@ import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import LogRocket from "logrocket";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCT7vj79ya-ET8qyl7QlLzKlpIIYQ-ibqM",
@@ -17,6 +18,7 @@ const firebaseConfig = {
   measurementId: "G-NKV8JNG846",
 };
 
+LogRocket.init("tyrxne/pulsantieramegafotonica");
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 

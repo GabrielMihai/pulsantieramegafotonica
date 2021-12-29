@@ -1,10 +1,21 @@
 <template>
   <div>
+    <navbar></navbar>
     <main class="py-4">
       <router-view />
     </main>
   </div>
 </template>
+
+<script lang="ts">
+import navbar from "./components/Navbar.vue";
+export default {
+  components: {
+    navbar,
+  },
+};
+</script>
+
 
 <style>
 #app {
